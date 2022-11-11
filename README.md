@@ -1,5 +1,4 @@
-# BuildWeek2-master
-<h1>Social Network</h1>
+# BuildWeek2 - Social Network
 
 <h2 align="center">Tecnologie Utilizzate</h2>
 <p align="center">
