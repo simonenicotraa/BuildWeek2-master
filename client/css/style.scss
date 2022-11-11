@@ -1,0 +1,549 @@
+/* Variabili */
+$color1: #eb9e35;
+$color2: #273b7a;
+$color_body: #F0F2F5;
+/* white; */
+$color-input: #eee;
+$font : 'Montserrat',
+sans-serif;
+$medio-grande: 1.2rem;
+$medio: 1rem;
+$piccolo: 0.8rem;
+
+#login,
+#registrati {
+    display: flex;
+    align-items: center;
+}
+
+html {
+    width: 100%;
+    height: 100vh;
+}
+
+body {
+    width: 100%;
+    /* height: 100%; */
+    margin: 0 auto;
+    font-family: $font;
+    background-color: $color_body;
+    text-align: center;
+    /* overflow: hidden; */
+
+
+    h1 {
+        font-size: $medio-grande;
+        font-weight: bold;
+    }
+
+    h2 {
+        font-size: $medio;
+        font-weight: bold;
+    }
+
+    h3 {
+        font-size: $medio;
+        font-weight: bold;
+    }
+
+    p {
+        font-size: $piccolo;
+    }
+
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        background-color: white;
+        color: white;
+        margin-bottom: 2rem;
+
+        div:first-child {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+    }
+
+    button {
+        font-size: $medio;
+        padding: 0.8rem;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 100%;
+        margin: 1rem auto;
+        background-color: $color1;
+        color: white;
+        border-radius: 5px;
+
+        &:hover {
+            background-color: $color1;
+        }
+    }
+
+    #claudia,
+    #claudia2 {
+        text-align: center;
+        width: 20rem;
+        margin: 6rem auto;
+        border-radius: 10px;
+        padding: 2rem;
+        background-color: white;
+        box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.46);
+
+        input {
+            width: 100%;
+            display: block;
+            margin: 1rem auto;
+            border-radius: 5px;
+            padding: 0.8rem;
+            border: 1px solid lightgrey;
+            box-sizing: border-box;
+            background-color: $color-input;
+        }
+
+        #Ricordami {
+            margin: 0;
+            width: 5%;
+        }
+
+        img {
+            display: inline-block;
+            margin-top: -9rem;
+            width: 200px;
+            height: 200px;
+        }
+    }
+
+    form {
+        width: 90%;
+        margin: 0 auto;
+
+        a:nth-child(1) {
+            button {
+                background-color: $color2;
+            }
+        }
+
+
+
+
+        div {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin: 1rem auto;
+
+            label {
+                margin-left: 5px;
+            }
+        }
+
+
+    }
+
+    button a {
+        text-decoration: none;
+        color: black;
+    }
+
+
+
+
+
+    footer {
+        background-color: white;
+        box-shadow: 1px 3px 5px 0px rgba(0, 0, 0, 0.75);
+        margin-top: 2rem;
+        text-align: center;
+        padding: 2rem;
+        color: $color2;
+        width: 100%;
+
+        section {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin: 2rem auto;
+        }
+
+        a {
+            text-decoration: none;
+            color: $color2;
+        }
+    }
+}
+
+/* PAGINA CHI SIAMO */
+.chi {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    div {
+        margin: 2rem auto;
+        width: 10rem;
+        background-color: $color-input;
+        border-radius: 5px;
+        padding: 1rem;
+        text-align: center;
+
+        img {
+            margin-bottom: 5px;
+        }
+    }
+
+}
+
+/* HOMEPAGE */
+.home {
+    div {
+        width: 60%;
+    }
+
+    .newpost {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+
+        textarea {
+            width: 100%;
+            border-radius: 5px;
+            border: none;
+            margin: 0.5rem auto
+        }
+
+        input {
+            width: 30%;
+            margin: 0 auto;
+            border-radius: 5px;
+        }
+    }
+
+    .allPost {
+        overflow: hidden;
+        height: 200px;
+
+        div {
+            background-color: white;
+            box-shadow: 2px 5px 11px 0px rgba(0, 0, 0, 0.75);
+            margin: 1rem auto;
+            padding: 2rem;
+
+            button {
+                background-color: #4466d6;
+                font-size: $piccolo;
+                padding: 1rem;
+            }
+        }
+    }
+
+
+
+
+
+}
+
+
+/* -------------------- HOMEPAGE -------------------- */
+
+
+
+
+#homepage {
+    a {
+        font-size: 0.8rem;
+        text-decoration: none;
+        color: black;
+    }
+
+    header {
+        background-color: white;
+        box-shadow: 0px 4px 10px 3px rgb(0 0 0 / 16%);
+        height: 5rem;
+        margin-bottom: 5rem;
+
+        img {
+            width: 7rem;
+            height: 7rem;
+            margin-bottom: 1rem;
+
+
+        }
+
+        .bi {
+            color: $color2;
+            margin-left: 3rem;
+        }
+
+        .bi-bell {
+            font-size: 0.9rem;
+        }
+
+        input {
+            border-radius: 5px;
+            border: none;
+            background-color: #eee;
+            padding: 8px;
+            margin-right: 4rem;
+        }
+    }
+}
+
+#homepage {
+    main {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    i {
+        font-size: 1.2rem;
+    }
+
+}
+
+.bi-envelope-heart {
+    font-size: 0.9rem !important;
+    margin-right: 5px;
+}
+
+.sinistra {
+    display: flex;
+    flex-direction: column;
+
+    .profilo {
+        display: flex;
+        align-items: center;
+        padding: 2rem;
+        box-sizing: border-box;
+        background-color: rgb(246, 246, 246);
+        border-top: 2px solid $color1 ;
+        box-shadow: 0px 4px 10px 3px rgb(0 0 0 / 16%);
+        margin-left: 2rem;
+        width: 16rem;
+        position: relative;
+
+
+        img {
+            width: 80px;
+            border: 1px solid lightgray;
+            border-radius: 50%;
+            position: absolute;
+            top: -50px;
+            left: 86px;
+        }
+
+
+
+    }
+
+    .info {
+        text-align: start;
+        margin-left: 1.5rem;
+        line-height: 1.5rem;
+
+    }
+}
+
+.info-personali {
+    text-align: start;
+    padding: 10px;
+    background-color: rgb(246, 246, 246);
+    border-top: 2px solid $color1;
+    box-shadow: 0px 4px 10px 3px rgb(0 0 0 / 16%);
+    margin: 2rem 2rem;
+    width: 16rem;
+    line-height: 1.5rem;
+    box-sizing: border-box;
+    line-height: 2rem;
+
+    button {
+        background-color: white;
+        color: black;
+        border-top: 2px solid $color2;
+        border-radius: 0;
+    }
+}
+
+
+
+.centro {
+    width: 30rem;
+    height: 1200px;
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    #nuovoPost {
+        position: fixed;
+        right: 30.2rem;
+        background-color: $color1;
+        opacity: 0.9;
+        padding: 0.2rem;
+        border-radius: 10%;
+
+
+    }
+
+
+    .newpost {
+        box-shadow: 0px 4px 10px 3px rgb(0 0 0 / 16%);
+        background-color: $color-input;
+        text-align: end;
+        font-size: $piccolo;
+
+
+        input {
+            display: block;
+            width: 100%;
+            background-color: $color-input;
+            padding: 1rem;
+            box-sizing: border-box;
+            border: none;
+        }
+
+        #title {
+            border-top: 2px solid $color2;
+            border-bottom: 1px solid rgba(218, 218, 218, 0.38);
+        }
+
+        #post {
+            height: 5rem;
+
+        }
+
+        button {
+            width: 30%;
+            margin-right: 2rem;
+            font-size: $piccolo;
+            background-color: rgba(211, 211, 211, 0.822);
+            color: black;
+            border-top: 2px solid green;
+            border-radius: 0;
+        }
+    }
+
+    .allPost {
+        margin-top: 4rem;
+        text-align: start;
+
+
+
+
+        div {
+            margin-bottom: 3rem;
+
+
+            img {
+                width: 478px;
+                height: 260px;
+                margin-bottom: 1rem !important;
+            }
+
+            button {
+                background-color: $color2;
+                width: 30%;
+                margin-right: 2rem;
+                font-size: 0.8rem;
+            }
+        }
+    }
+}
+
+
+.destra {
+    margin-left: 2rem;
+
+    #filtro {
+        width: 80%;
+        margin-right: 2rem;
+        padding: 1rem;
+        border: none;
+        border-top: 2px solid $color1;
+    }
+
+    .contacts {
+        margin: 2rem 2rem 0 0;
+
+        .card-height {
+            height: 15rem !important;
+        }
+
+        .info-card {
+            border-top: 2px solid $color1;
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(246, 246, 246);
+            box-shadow: 0px 4px 10px 3px rgb(0 0 0 / 16%);
+            height: 3.8rem;
+            margin-bottom: 1.5rem;
+            transition: height 0.5s ease-out;
+
+
+            .informazioni {
+                display: flex;
+                align-items: center;
+                padding: 10px;
+
+                width: 100%;
+                height: 4rem;
+                box-sizing: border-box;
+                justify-content: space-between;
+
+                img {
+                    width: 50px;
+                    border: 1px solid lightgray;
+                    border-radius: 50%;
+
+                }
+
+                span {
+                    font-size: $piccolo;
+                    padding: 5px;
+                    margin: 1rem;
+                }
+            }
+
+            button {
+
+                width: 3.5rem;
+                display: inline-block;
+                background-color: rgb(246, 246, 246);
+                color: black;
+                margin: 0;
+                border-top: 2px solid $color2;
+                border-radius: 0;
+                padding: 0.3rem;
+
+
+                .i {
+                    margin: 5px;
+                }
+            }
+
+            .more-info {
+                overflow: hidden;
+                margin-top: 0.5rem;
+                line-height: 3rem;
+                padding: 1rem;
+
+                p {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+.allPost>div {
+    border-top: 2px solid $color2;
+
+}

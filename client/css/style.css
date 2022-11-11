@@ -1,0 +1,424 @@
+/* Variabili */
+/* white; */
+#login,
+#registrati {
+  display: flex;
+  align-items: center;
+}
+
+html {
+  width: 100%;
+  height: 100vh;
+}
+
+body {
+  width: 100%;
+  /* height: 100%; */
+  margin: 0 auto;
+  font-family: "Montserrat", sans-serif;
+  background-color: #F0F2F5;
+  text-align: center;
+  /* overflow: hidden; */
+}
+body h1 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+body h2 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+body h3 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+body p {
+  font-size: 0.8rem;
+}
+body header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  color: white;
+  margin-bottom: 2rem;
+}
+body header div:first-child {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+body button {
+  font-size: 1rem;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  margin: 1rem auto;
+  background-color: #eb9e35;
+  color: white;
+  border-radius: 5px;
+}
+body button:hover {
+  background-color: #eb9e35;
+}
+body #claudia,
+body #claudia2 {
+  text-align: center;
+  width: 20rem;
+  margin: 6rem auto;
+  border-radius: 10px;
+  padding: 2rem;
+  background-color: white;
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.46);
+}
+body #claudia input,
+body #claudia2 input {
+  width: 100%;
+  display: block;
+  margin: 1rem auto;
+  border-radius: 5px;
+  padding: 0.8rem;
+  border: 1px solid lightgrey;
+  box-sizing: border-box;
+  background-color: #eee;
+}
+body #claudia #Ricordami,
+body #claudia2 #Ricordami {
+  margin: 0;
+  width: 5%;
+}
+body #claudia img,
+body #claudia2 img {
+  display: inline-block;
+  margin-top: -9rem;
+  width: 200px;
+  height: 200px;
+}
+body form {
+  width: 90%;
+  margin: 0 auto;
+}
+body form a:nth-child(1) button {
+  background-color: #273b7a;
+}
+body form div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem auto;
+}
+body form div label {
+  margin-left: 5px;
+}
+body button a {
+  text-decoration: none;
+  color: black;
+}
+body footer {
+  background-color: white;
+  box-shadow: 1px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  margin-top: 2rem;
+  text-align: center;
+  padding: 2rem;
+  color: #273b7a;
+  width: 100%;
+}
+body footer section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 2rem auto;
+}
+body footer a {
+  text-decoration: none;
+  color: #273b7a;
+}
+
+/* PAGINA CHI SIAMO */
+.chi {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.chi div {
+  margin: 2rem auto;
+  width: 10rem;
+  background-color: #eee;
+  border-radius: 5px;
+  padding: 1rem;
+  text-align: center;
+}
+.chi div img {
+  margin-bottom: 5px;
+}
+
+/* HOMEPAGE */
+.home div {
+  width: 60%;
+}
+.home .newpost {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+.home .newpost textarea {
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  margin: 0.5rem auto;
+}
+.home .newpost input {
+  width: 30%;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+.home .allPost {
+  overflow: hidden;
+  height: 200px;
+}
+.home .allPost div {
+  background-color: white;
+  box-shadow: 2px 5px 11px 0px rgba(0, 0, 0, 0.75);
+  margin: 1rem auto;
+  padding: 2rem;
+}
+.home .allPost div button {
+  background-color: #4466d6;
+  font-size: 0.8rem;
+  padding: 1rem;
+}
+
+/* -------------------- HOMEPAGE -------------------- */
+#homepage a {
+  font-size: 0.8rem;
+  text-decoration: none;
+  color: black;
+}
+#homepage header {
+  background-color: white;
+  box-shadow: 0px 4px 10px 3px rgba(0, 0, 0, 0.16);
+  height: 5rem;
+  margin-bottom: 5rem;
+}
+#homepage header img {
+  width: 7rem;
+  height: 7rem;
+  margin-bottom: 1rem;
+}
+#homepage header .bi {
+  color: #273b7a;
+  margin-left: 3rem;
+}
+#homepage header .bi-bell {
+  font-size: 0.9rem;
+}
+#homepage header input {
+  border-radius: 5px;
+  border: none;
+  background-color: #eee;
+  padding: 8px;
+  margin-right: 4rem;
+}
+
+#homepage main {
+  display: flex;
+  justify-content: space-between;
+}
+#homepage i {
+  font-size: 1.2rem;
+}
+
+.bi-envelope-heart {
+  font-size: 0.9rem !important;
+  margin-right: 5px;
+}
+
+.sinistra {
+  display: flex;
+  flex-direction: column;
+}
+.sinistra .profilo {
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  box-sizing: border-box;
+  background-color: rgb(246, 246, 246);
+  border-top: 2px solid #eb9e35;
+  box-shadow: 0px 4px 10px 3px rgba(0, 0, 0, 0.16);
+  margin-left: 2rem;
+  width: 16rem;
+  position: relative;
+}
+.sinistra .profilo img {
+  width: 80px;
+  border: 1px solid lightgray;
+  border-radius: 50%;
+  position: absolute;
+  top: -50px;
+  left: 86px;
+}
+.sinistra .info {
+  text-align: start;
+  margin-left: 1.5rem;
+  line-height: 1.5rem;
+}
+
+.info-personali {
+  text-align: start;
+  padding: 10px;
+  background-color: rgb(246, 246, 246);
+  border-top: 2px solid #eb9e35;
+  box-shadow: 0px 4px 10px 3px rgba(0, 0, 0, 0.16);
+  margin: 2rem 2rem;
+  width: 16rem;
+  line-height: 1.5rem;
+  box-sizing: border-box;
+  line-height: 2rem;
+}
+.info-personali button {
+  background-color: white;
+  color: black;
+  border-top: 2px solid #273b7a;
+  border-radius: 0;
+}
+
+.centro {
+  width: 30rem;
+  height: 1200px;
+  overflow-y: scroll;
+}
+.centro::-webkit-scrollbar {
+  display: none;
+}
+.centro #nuovoPost {
+  position: fixed;
+  right: 30.2rem;
+  background-color: #eb9e35;
+  opacity: 0.9;
+  padding: 0.2rem;
+  border-radius: 10%;
+}
+.centro .newpost {
+  box-shadow: 0px 4px 10px 3px rgba(0, 0, 0, 0.16);
+  background-color: #eee;
+  text-align: end;
+  font-size: 0.8rem;
+}
+.centro .newpost input {
+  display: block;
+  width: 100%;
+  background-color: #eee;
+  padding: 1rem;
+  box-sizing: border-box;
+  border: none;
+}
+.centro .newpost #title {
+  border-top: 2px solid #273b7a;
+  border-bottom: 1px solid rgba(218, 218, 218, 0.38);
+}
+.centro .newpost #post {
+  height: 5rem;
+}
+.centro .newpost button {
+  width: 30%;
+  margin-right: 2rem;
+  font-size: 0.8rem;
+  background-color: rgba(211, 211, 211, 0.822);
+  color: black;
+  border-top: 2px solid green;
+  border-radius: 0;
+}
+.centro .allPost {
+  margin-top: 4rem;
+  text-align: start;
+}
+.centro .allPost div {
+  margin-bottom: 3rem;
+}
+.centro .allPost div img {
+  width: 478px;
+  height: 260px;
+  margin-bottom: 1rem !important;
+}
+.centro .allPost div button {
+  background-color: #273b7a;
+  width: 30%;
+  margin-right: 2rem;
+  font-size: 0.8rem;
+}
+
+.destra {
+  margin-left: 2rem;
+}
+.destra #filtro {
+  width: 80%;
+  margin-right: 2rem;
+  padding: 1rem;
+  border: none;
+  border-top: 2px solid #eb9e35;
+}
+.destra .contacts {
+  margin: 2rem 2rem 0 0;
+}
+.destra .contacts .card-height {
+  height: 15rem !important;
+}
+.destra .contacts .info-card {
+  border-top: 2px solid #eb9e35;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(246, 246, 246);
+  box-shadow: 0px 4px 10px 3px rgba(0, 0, 0, 0.16);
+  height: 3.8rem;
+  margin-bottom: 1.5rem;
+  transition: height 0.5s ease-out;
+}
+.destra .contacts .info-card .informazioni {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+  height: 4rem;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+.destra .contacts .info-card .informazioni img {
+  width: 50px;
+  border: 1px solid lightgray;
+  border-radius: 50%;
+}
+.destra .contacts .info-card .informazioni span {
+  font-size: 0.8rem;
+  padding: 5px;
+  margin: 1rem;
+}
+.destra .contacts .info-card button {
+  width: 3.5rem;
+  display: inline-block;
+  background-color: rgb(246, 246, 246);
+  color: black;
+  margin: 0;
+  border-top: 2px solid #273b7a;
+  border-radius: 0;
+  padding: 0.3rem;
+}
+.destra .contacts .info-card button .i {
+  margin: 5px;
+}
+.destra .contacts .info-card .more-info {
+  overflow: hidden;
+  margin-top: 0.5rem;
+  line-height: 3rem;
+  padding: 1rem;
+}
+.destra .contacts .info-card .more-info p {
+  margin-bottom: 0;
+}
+
+.allPost > div {
+  border-top: 2px solid #273b7a;
+}/*# sourceMappingURL=style.css.map */

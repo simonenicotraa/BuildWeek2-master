@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple - Homepage</title>
+
+    <link rel="stylesheet" href="css/Reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap"
+        rel="stylesheet">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+
+<body id="homepage">
+    <header>
+        <div>
+            <a href="homepage.html"><img src="images/logo.png" alt="" width="100" height="100"></a>
+        </div>
+        <div>
+            <a href=""><i class="bi bi-house-heart"></i></a>
+
+            <a onclick="logout()"><i class="bi bi-box-arrow-left"></i></a>
+        </div>
+        <!--  <div>
+            <input type="search" placeholder="Search">
+
+        </div> -->
+    </header>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Applica Modifiche</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="d-flex flex-column mb-2">
+                        <input type="text" class="mb-3 p-2" placeholder="Nome e cognome">
+                        <input type="text" class="mb-3 p-2" placeholder="Username">
+                        <input type="text" class="mb-3 p-2" placeholder="Email">
+                        <input type="text" class="mb-3 p-2" placeholder="Via">
+                        <input type="text" class="mb-3 p-2" placeholder="Numero civico">
+                        <input type="text" class="mb-3 p-2" placeholder="Citta">
+                        <input type="text" class="mb-3 p-2" placeholder="Zipcode">
+                        <input type="text" class="mb-3 p-2" placeholder="Cellulare">
+                        <input type="text" class="mb-3 p-2" placeholder="Sito-Web">
+
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
+                    <button type="button" class="btn btn-primary" onclick="modificaDati()">Salva</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <main>
+        <div class="sinistra">
+            <div class="profilo">
+
+            </div>
+            <a href="tel:+"></a>
+            <div class="info-personali">
+
+            </div>
+
+        </div>
+
+
+        <div class="centro">
+            <div id="nuovoPost">
+                <a href="#newpost"><i class="bi bi-capslock"></i>New Post</a>
+            </div>
+            <div>
+                <div class="newpost" id="newpost">
+                    <input type="text" name="tito" id="title" placeholder="Dai un titolo al tuo post... ">
+                    <input type="text" name="contpost" id="post" placeholder="Contenuto del post">
+                    <button onclick="aggiungiPost()">Aggiungi Post</button>
+                </div>
+
+                <div class="allPost">
+                    <!-- sezione post -->
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="destra">
+
+
+            <div>
+                <input id="filtro" type="text" onkeyup="myFunction()" placeholder="Search">
+            </div>
+
+            <div class="contacts">
+
+            </div>
+
+        </div>
+    </main>
+
+
+
+
+
+
+
+    <footer>
+        <section>
+            <div>
+                <p>I nostri canali social</p>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+                <a href=""><i class="bi bi-twitter"></i></a>
+            </div>
+            <div>
+                <a href="index.html">Homepage</a>
+            </div>
+        </section>
+
+        <p>A -Buildweek- production, &copy;Epicode</p>
+    </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
